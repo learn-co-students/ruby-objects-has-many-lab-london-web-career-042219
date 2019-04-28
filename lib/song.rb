@@ -1,5 +1,5 @@
 class Song
-  attr_accessor :artist, :title
+  attr_accessor :name, :artist
 
   @@all = []
 
@@ -13,5 +13,11 @@ class Song
     #returns everything in the @@all array
     @@all
   end
-  
+
+  def artist_name
+  #returns the name of the artist associated with a Song instance
+    @artist.name
+  end
+
+
 end
